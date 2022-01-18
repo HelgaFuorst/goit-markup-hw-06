@@ -95,7 +95,7 @@
             </svg>
           </button>
           <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="modal-form">
+          <form action="#" class="modal-form">
             <label class="form-name-direction"
               >Имя
               <input type="text" name="user-name" />
@@ -485,11 +485,18 @@
           </ul>
         </div>
         <div>
-          <h2 class="basment-head">Подпишитесь на рассылку</h2>
-          <form autocomplete="on">
-            <label>
-              <input type="text" name="e-mail" placeholder="E-mail" />
-            </label>
+          <h2 class="basment-head"></h2>
+          <form action="#" autocomplete="on">
+            <label for="basment-email" class="basment-head"
+              >ПОДПИШИСЬ НА РАССЫЛКУ</label
+            >
+            <input
+              type="mail"
+              name="e-mail"
+              placeholder="E-mail"
+              id="basment-email"
+            />
+
             <button class="form-button" type="submit">
               Подписаться
               <svg width="20px" height="20px" class="">
