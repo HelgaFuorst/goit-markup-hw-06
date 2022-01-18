@@ -487,12 +487,16 @@ button {
   border-radius: 50%;
   background-color: var(--white-color);
 
+  fill: #000000;
+
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover {
   transform: scale(1.25);
+  fill: var(--brand-color);
 }
 .modal-header {
   font-style: normal;
@@ -511,14 +515,15 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-.form-button {
-  text-align: center;
 
+.modal-form-button {
   width: 200px;
   height: 50px;
 
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
   padding: 12px 32px;
-
   border: none;
   border-radius: 4px;
   background-color: var(--brand-color);
@@ -527,12 +532,6 @@ button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-}
-.modal-form-button {
-  margin-right: auto;
-  margin-left: auto;
-
-  margin-top: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -608,6 +607,7 @@ button {
   margin-right: auto;
   justify-items: left;
   margin-top: 20px;
+  margin-right: 92px;
 }
 
 .social-link-basement {
@@ -630,6 +630,54 @@ button {
   fill: var(--white-color);
   background-color: var(--brand-color);
   border-color: var(--brand-color);
+}
+
+.mail-button {
+  margin-top: 20px;
+  display: flex;
+}
+.subscribe-email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-email:focus {
+  border: 1px solid var(--brand-color);
+}
+.subscribe-button {
+  display: flex;
+}
+
+.basment-form-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  background-color: var(--brand-color);
+
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.basment-form-icon {
+  margin-left: 10px;
+  fill: var(--white-color);
 }
 
 /*Портфолио*/

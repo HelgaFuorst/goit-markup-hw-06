@@ -487,22 +487,26 @@
         <div>
           <h2 class="basment-head"></h2>
           <form action="#" autocomplete="on">
-            <label for="basment-email" class="basment-head"
+            <label for="basment-email" class="basment-head subscribe-head"
               >ПОДПИШИСЬ НА РАССЫЛКУ</label
             >
-            <input
-              type="mail"
-              name="e-mail"
-              placeholder="E-mail"
-              id="basment-email"
-            />
-
-            <button class="form-button" type="submit">
-              Подписаться
-              <svg width="20px" height="20px" class="">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </button>
+            <div class="mail-button">
+              <input
+                type="mail"
+                name="e-mail"
+                placeholder="E-mail"
+                id="basment-email"
+                class="subscribe-email"
+              />
+              <div class="subscribe-button">
+                <button class="form-button basment-form-button" type="submit">
+                  Подписаться
+                  <svg width="24px" height="24px" class="basment-form-icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
