@@ -96,30 +96,50 @@
           </button>
           <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
           <form action="#" class="modal-form">
-            <label class="form-name-direction"
-              >Имя
-              <input type="text" name="user-name" />
-            </label>
-            <label class="form-name-direction"
-              >Телефон
-              <input type="tel" name="user-name" />
-            </label>
-            <label class="form-name-direction"
-              >Почта
-              <input type="mail" name="user-name" />
-            </label>
-            <label class="form-name-direction"
-              >Коментарии
+            <div class="modal-form-style">
+              <label for="user-name" class="form-name-direction">Имя</label>
+              <input
+                class="modal-input-main"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+            </div>
+            <div class="modal-form-style">
+              <label for="tel" class="form-name-direction">Телефон </label>
+              <input
+                class="modal-input-main"
+                type="tel"
+                name="phone"
+                id="tel"
+              />
+            </div>
+            <div class="modal-form-style">
+              <label for="email" class="form-name-direction">Почта</label>
+              <input
+                class="modal-input-main"
+                type="mail"
+                name="mail"
+                id="mail"
+              />
+            </div>
+            <div class="modal-form-comment">
+              <label for="comment" class="form-name-direction"
+                >Коментарии</label
+              >
               <textarea
+                class="comment"
                 name="feedback"
                 rows="5"
                 placeholder="Введите текст"
+                id="comment"
               ></textarea>
-            </label>
-            <label class="">
+            </div>
+
+            <label class="check-box-text">
               <input type="checkbox" name="hobby" value="music" checked />
               Соглашаюсь с рассылкой и принимаю
-              <a href=""> Условия договора</a>
+              <a class="policy" href=""> Условия договора</a>
             </label>
             <button class="modal-form-button form-button" type="submit">
               Отправить
@@ -485,14 +505,13 @@
           </ul>
         </div>
         <div>
-          <h2 class="basment-head"></h2>
-          <form action="#" autocomplete="on">
+          <form autocomplete="on">
             <label for="basment-email" class="basment-head subscribe-head"
               >ПОДПИШИСЬ НА РАССЫЛКУ</label
             >
             <div class="mail-button">
               <input
-                type="mail"
+                type="email"
                 name="e-mail"
                 placeholder="E-mail"
                 id="basment-email"
