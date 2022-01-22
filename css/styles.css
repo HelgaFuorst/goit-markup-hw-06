@@ -477,7 +477,7 @@ button {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
 }
-/* translate(-50%, -50%) */
+
 .close-button {
   position: absolute;
   top: 8px;
@@ -555,6 +555,9 @@ button {
 
 .comment {
   resize: none;
+
+  padding-left: 15px;
+  padding-top: 15px;
   min-width: 448px;
   min-height: 120px;
   margin-bottom: 20px;
@@ -570,11 +573,13 @@ button {
 .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.check-box-policy {
+/* .check-box-policy {
   display: flex;
   align-items: center;
-}
+} */
 .check-box-text {
+  display: flex;
+  align-items: center;
   margin-left: 7px;
   font-style: normal;
   font-weight: normal;
@@ -588,7 +593,8 @@ button {
   align-items: center;
   width: 16px;
   height: 15px;
-  margin-left: 10px;
+
+  margin-right: 9px;
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
 
@@ -603,6 +609,10 @@ button {
   position: absolute;
   appearance: none;
 }
+.check-box:checked:not(.check-border) {
+  background-color: var(--white-color);
+}
+
 .check-box:checked + .check-border > .check-icon {
   fill: var(--white-color);
 }
@@ -610,8 +620,10 @@ button {
   background-color: var(--brand-color);
   border: transparent;
 }
+
 .policy {
   color: var(--brand-color);
+  margin-left: 4px;
 }
 .modal-form-button {
   width: 200px;
